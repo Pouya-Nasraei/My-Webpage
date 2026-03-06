@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{{ post.title }}
+{% endblock %}
+
+{% block content %}
+
+    <h1>{{ post.title}}: </h1><hr class="line">
+     <main id="links">
+        <p>Author: {{ post.author }}</p>
+        <hr class="line">
+        <p>{{ post.body }}</p>
+        <hr class="line">
+        <p>Created Time: {{ post.created_date }}</p>
+     </main>
+{% endblock %}
+
+{% block comment %}
+
+    {% if messages %}
+        {% for message in messages %}
+            <p class="success-message">{{ message }}</p>
+        {% endfor %}
+    {% endif %}
+
+    {% if new_comment %}
+        <p>Your comment has been sent. Please, wait to be confirmed by admin.</p>
+    {% else %}
+        <form method="post">
+            {{ comment_form.as_p }}
+            <input type="submit" value="Send Comment" class="button">
+            {% csrf_token %}
+        </form>
+    {% endif %}
+    {% for comment in post.active_comments %}
+        <main id="links">
+        <p>Comment: {{ comment.comment }}</p>
+        <p>Name: {{ comment.name }}</p>
+        <p>Email: {{ comment.email }}</p>
+        <hr />
+        </main>
+    {% endfor %}
+
+{% endblock %}
