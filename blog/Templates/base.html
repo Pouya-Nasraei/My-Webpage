@@ -1,0 +1,51 @@
+{% load static %}
+{% load my_tags %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head class="c-main-header" >
+<title id="pouya-title">
+    {% block title %}
+    {% endblock %}
+</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+
+<body>
+<header>
+    <div id="pouya-page">Pouya's page<br><br>(containing {% total_count %} tags)</div>
+</header>
+
+
+<nav aria-label="Main Site Links.">
+    <div class="navbar">
+        <a href="/#contact">Contact Me</a>
+        <a href="/#about">About</a>
+        <a href="/#gallery">Gallery</a>
+        <div class="dropdown">
+            <button class="dropbtn">Classes
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="/capoeira">Capoeira</a>
+                <a href="/self-defense">Self-Defense</a>
+                <a href="/fitness">Fitness</a>
+            </div>
+        </div>
+        <a href="/">Home</a><hr class="line">
+    </div>
+
+    <div>
+        {% block content %}
+        {% endblock %}
+
+        <h1>Comments: </h1>
+        {% block comment %}
+
+        {% endblock %}
+    </div>
+
+</body>
+</html>
