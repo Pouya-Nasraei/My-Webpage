@@ -202,39 +202,141 @@ CSS styling and frontend layout.
 # Project Structure
 
 My-Webpage
+
 │
+
+├── .idea
+
+│   ├── dataSources
+
+│   ├── inspectionProfiles
+
+│   │      ├──profiles_settings.XML
+
+│   │      ├──Project_Default.XML
+
+│   │
+
+│   ├── .gitignore.txtfile
+
+│   ├── dataSources.local.XML
+
+│   ├── dataSources.XML
+
+│   ├── misc.XML
+
+│   ├── modules.XML
+
+│   ├── mysite.iml.IML
+
+│   ├── My-Webpage.iml.IML
+
+│   ├── vcs.XML
+
+│   └── workspace.XML
+
+│ 
+
+├── .vscode
+
+│       └── launch.JSON
+
+│ 
+
 ├── blog
-│     ├── migrations
-│     ├── static
-│  │  └── css
-│  │  └── style.css
-│  │
-│  ├── templates
-│  │  ├── base.html
-│  │  ├── contact_me.html
-│  │  ├── post_detail.html
-│  │  └── post_list.html
-│  │ 
-│  ├── templatetags
-│  │  └── my_tags.py
-│  │
-│  ├── admin.py
-│  ├── forms.py
-│  ├── models.py
-│  ├── urls.py
-│  └── views.py
+
+│   ├── __pycache__
+
+│   ├── migrations
+
+│   │        ├── __pycache__
+
+│   │        ├── __init__.py
+
+│   │        ├── 0001_initial.py
+
+│   │        ├── 0002_comment.py
+
+│   │        ├── 0003_post_tags.py
+
+│   │
+
+│   ├──static
+
+│   │     └── css
+
+│   │     │     └── style.css
+
+│   │  
+
+│   ├── Templates
+
+│   │        ├── base.HTML
+
+│   │        ├── contact_me.HTML
+
+│   │        ├── post_detail.HTML
+
+│   │        ├── post_list.HTML
+
+│   │
+
+│   ├── templatetags
+
+│   │       ├── __pycache__
+
+│   │       ├── __init__.py
+
+│   │       ├── my_tags.py
+
+│   │
+
+│   ├── __init__.py
+
+│   ├── admin.py
+
+│   ├── apps.py
+
+│   ├── forms.py
+
+│   ├── models.py
+
+│   ├── tests.py
+
+│   ├── urls.py
+
+│   ├── views.py
+
 │
+
 ├── Images-and-videos
-│
+
+│  
+
 ├── mysite
-│  ├── settings.py
-│  ├── urls.py
-│  ├── asgi.py
-│  └── wsgi.py
-│
-├── db.sqlite3
+
+│    ├── __pycache__
+
+│    ├── __init__.py
+
+│    ├── asgi.py
+
+│    ├── settings.py
+
+│    ├── urls.py
+
+│    └── wsgi.py
+
+│   
+
+├── My-Webpage
+
+├── db.sqlite3.SQLITE3
+
 ├── manage.py
-└── README.md
+
+└── README.md.MD
+
 
 ---
 
