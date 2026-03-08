@@ -1,5 +1,6 @@
 <p align="center">
-  <img src="Images-and-videos/matrix-banner.gif" alt="Pouya Django Website Banner" width="100%">
+  <img src="Images-and-videos/matrix-banner.gif"
+       style="width:100%; max-height:180px; object-fit:cover; border-radius:10px;">
 </p>
 
 <h1 align="center">My Webpage – Django Personal Website</h1>
